@@ -30,11 +30,11 @@ import Topnav from '../components/Topnav.vue'
 export default {
     components:{Topnav},
     setup(){
-const menuVisible =inject<Ref<boolean>>('xxx')
+const menuVisible =inject<Ref<boolean>>('menuVisible')//get
 console.log('Doc aside 获取的menuVisible为：'+menuVisible.value)
 return {menuVisible}
 }
-}
+};
 </script>
 <style lang="scss" scoped>
 aside {
